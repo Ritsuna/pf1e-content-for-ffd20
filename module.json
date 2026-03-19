@@ -1,7 +1,7 @@
 {
   "title": "Pathfinder 1e Content for FFd20",
   "description": "Contains magic items, non-magical items, feats, traits, class abilities, racial traits, diseases, drugs, special weapon/armor qualities, buffs/debuffs, familiars, eidolons, companions, magic item, and encounter tables. Additionally, Includes a huge amount of Rule journals for PF, bios and info for deities. Along with a host of other resources. These compendiums are not perfect. Except for buffs, most of them do not contain the appropriate changes to attacks, bonuses, etc. However, the item description and most of the relevant info needed to make work them are included, and Change formulas are slowly being added.",
-  "version": "11.0.1",
+  "version": "11.4.0",
   "relationships": {
     "systems": [
       {
@@ -16,7 +16,7 @@
   },
   "compatibility": {
     "minimum": "12",
-    "verified": "12"
+    "verified": "13"
   },
   "packFolders": [
     {
@@ -49,7 +49,9 @@
         "pf-cursed-items",
         "pf-goods-services",
         "pf-items",
+        "pf-intelligent-items",
         "pf-magic-items",
+        "pf-scaling-items",
         "pf-special-qualities",
         "pf-wondrous"
       ],
@@ -67,7 +69,14 @@
     },
     {
       "name": "Miscellaneous",
-      "packs": ["pf-35-content", "pf-collab-content", "pf-third-party", "pf-maladies", "pf-occult-rituals"],
+      "packs": [
+        "pf-35-content",
+        "pf-collab-content",
+        "pf-society",
+        "pf-third-party",
+        "pf-maladies",
+        "pf-occult-rituals"
+      ],
       "color": "#777777"
     }
   ],
@@ -104,7 +113,7 @@
     },
     {
       "name": "pf-collab-content",
-      "label": "Paizo Collaborations",
+      "label": "PF-Paizo Collaborations",
       "system": "ffd20",
       "path": "packs/pf-collab-content",
       "type": "Item",
@@ -194,7 +203,7 @@
     },
     {
       "name": "pf-third-party",
-      "label": "3rd Party Content",
+      "label": "PF-3rd Party Content",
       "system": "ffd20",
       "path": "packs/pf-third-party",
       "type": "Item",
@@ -248,6 +257,16 @@
       "system": "ffd20",
       "path": "packs/harrow-deck",
       "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER"
+      }
+    },
+    {
+      "name": "pf-intelligent-items",
+      "label": "PF-Intelligent Items",
+      "system": "ffd20",
+      "path": "packs/pf-intelligent-items",
+      "type": "Item",
       "ownership": {
         "PLAYER": "OBSERVER"
       }
@@ -333,6 +352,26 @@
       }
     },
     {
+      "name": "pf-scaling-items",
+      "label": "PF-Scaling Items",
+      "system": "ffd20",
+      "path": "packs/pf-scaling-items",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER"
+      }
+    },
+    {
+      "name": "pf-society",
+      "label": "PF-Pathfinder Society",
+      "system": "ffd20",
+      "path": "packs/pf-society",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER"
+      }
+    },
+    {
       "name": "pf-special-qualities",
       "label": "PF-Special Qualities",
       "system": "ffd20",
@@ -396,7 +435,7 @@
   "esmodules": ["pf-content.js"],
   "authors": [
     {
-      "name": "Tristan Goucher, with major contributions (see Credits)",
+      "name": "Tryss Farron, with major contributions (see Credits)",
       "discord": "fairstrides"
     },
     {
@@ -413,7 +452,7 @@
   "id": "pf-content-for-ffd20",
   "url": "https://github.com/ritsuna/pf1e-content-for-ffd20",
   "manifest": "https://raw.githubusercontent.com/Ritsuna/pf1e-content-for-ffd20/main/module.json",
-  "download": "https://github.com/Ritsuna/pf1e-content-for-ffd20/archive/refs/tags/11.0.1.zip",
+  "download": "https://github.com/Ritsuna/pf1e-content-for-ffd20/archive/refs/tags/11.4.0.zip",
   "readme": "https://github.com/ritsuna/pf1e-content-for-ffd20/blob/main/README.md",
   "changelog": "https://github.com/ritsuna/pf1e-content-for-ffd20/blob/main/changelog.md"
 }
